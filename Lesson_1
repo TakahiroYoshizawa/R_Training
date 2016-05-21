@@ -1,0 +1,5 @@
+Lesson1
+#データのインポートと変更
+PassengerTS <- read.csv("airpass.csv")
+
+#合格者と不合格者に分けてplotしよう
