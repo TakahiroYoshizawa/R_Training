@@ -15,8 +15,11 @@ Rへの組み込みデータAirPassengersを用いて,Rでのデータの基本�
 
 '
     #Mean
+    
     mean(data)
+    
     #Median
+    
     mean(data)
 '
 
