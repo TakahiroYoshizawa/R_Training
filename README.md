@@ -17,7 +17,7 @@ Rゼミについて
 * もし分からないことがあれば以下のサイト・文献を参考されたい
     * 基本操作関連
         * Rクックブック,オライリー・ジャパン
-        * R-Tips,http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html
+        * [R-Tips](http://cse.naro.affrc.go.jp/takezawa/r-tips/r.html)
         
 カリキュラム
 --
