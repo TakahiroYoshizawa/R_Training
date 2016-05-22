@@ -40,3 +40,11 @@ plot(AirPassengers)
 
 plot(Nile)
 line(mean(Nile))
+
+
+Ahist <- hist(DataA, breaks=seq(450,1500,75))
+Ahist <- abline(v=mean(DataA),col="red")
+Ahist <- abline(v=median(DataA),col="blue")
+
+?hist
+

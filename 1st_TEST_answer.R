@@ -1,3 +1,4 @@
+#(1)答
 standev<-function(data){
   diffsq <- vector()
   ave <- sum(data)/length(data)
@@ -8,18 +9,22 @@ standev<-function(data){
   stdev <- variance^(1/2) 
   return(stdev)
 }
-
 standev(DataA)
 
-for(i in 1:length(DataA)){
-  diffsq <- (DataA[i]-ave)^2    
-  diffsqlist <- append(diffsqlist, diffsq)
-  } 
-variance <- sum(diffsqlist)/(length(DataA))
-  
+#(2)答
+plot(DataA)
 
-Ahist <- hist(DataA, breaks=seq(450,1500,75))
-Ahist <- abline(v=mean(DataA),col="red")
-Ahist <- abline(v=median(DataA),col="blue")
+#(3)
+abline(h=mean(DataA),col="red")
+abline(h=median(DataA),col="blue")
 
-?hist
+
+#(1)
+DataB <- read.csv("trees.csv")
+DataB <- na.omit(DataB)
+Girth<- DataB$Girth
+Height<- DataB$Height
+Volume<- DataB$Volume
+lr <- lm(Height~Girth+Volume)
+summary(lr)
+plot(DataB)
