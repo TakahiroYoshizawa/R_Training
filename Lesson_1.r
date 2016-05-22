@@ -38,3 +38,5 @@ plot(Passenger[1,])
 plot(Passenger[1,],type='l')
 plot(AirPassengers)
 
+plot(Nile)
+line(mean(Nile))
