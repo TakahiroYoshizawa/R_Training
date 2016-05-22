@@ -11,9 +11,15 @@ standev<-function(data){
 
 standev(DataA)
 
-  for(i in 1:length(DataA)){
-    diffsq <- (DataA[i]-ave)^2    
-    diffsqlist <- append(diffsqlist, diffsq)
-    } 
-  variance <- sum(diffsqlist)/(length(DataA))
+for(i in 1:length(DataA)){
+  diffsq <- (DataA[i]-ave)^2    
+  diffsqlist <- append(diffsqlist, diffsq)
+  } 
+variance <- sum(diffsqlist)/(length(DataA))
   
+
+Ahist <- hist(DataA, breaks=seq(450,1500,75))
+Ahist <- abline(v=mean(DataA),col="red")
+Ahist <- abline(v=median(DataA),col="blue")
+
+?hist
