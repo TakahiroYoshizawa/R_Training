@@ -38,13 +38,21 @@ plot(Passenger[1,])
 plot(Passenger[1,],type='l')
 plot(AirPassengers)
 
+
+
 plot(Nile)
-line(mean(Nile))
-
-
 Ahist <- hist(DataA, breaks=seq(450,1500,75))
-Ahist <- abline(v=mean(DataA),col="red")
-Ahist <- abline(v=median(DataA),col="blue")
 
+plotA <- layout(matrix(c(1,2),1,2,byrow=TRUE), c(3,1), TRUE)
+par(mar=c(4,4,3,1)) 
+plot(DataA)
+abline(h=mean(DataA),col="red")
+abline(h=median(DataA),col="blue")
+par(mar=c(4,0,3,1)) 
+barplot(Ahist$counts,horiz = T)
+
+
+par(new="T")
+Ahist
 ?hist
 
